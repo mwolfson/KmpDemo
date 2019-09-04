@@ -81,3 +81,4 @@ lint/outputs/
 lint/tmp/
 # lint/reports/
 .idea/artifacts/SharedCode_android.xml
+.idea/artifacts/SharedCode_android_0_0_1.xml
