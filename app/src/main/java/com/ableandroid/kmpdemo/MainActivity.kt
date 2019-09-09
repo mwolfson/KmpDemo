@@ -16,7 +16,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
+        logIt("this is the first message",  "DEBUG", "MSW")
+        logIt("ERROR message",  "ERROR", "MSW")
+        logIt("WARN message")
+
         findViewById<TextView>(R.id.main_text).text = createApplicationScreenMessage()
+        findViewById<TextView>(R.id.timestamp_text).text = createTimestampScreenMessage()
         
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
